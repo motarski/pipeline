@@ -1,6 +1,4 @@
 // Script //
-def extWorkspace = exwsAllocate 'diskpool1'
-
 node {
   stage("build") {
   def hello = "Mr.Ivan"
