@@ -1,7 +1,7 @@
 // Script //
 node {
   milestone()
-  lock("Job input"){
+  lock("Job input", inversePrecedence: true){
   milestone(1)
   stage("build") {
   def hello = "Mr.Ivan"
