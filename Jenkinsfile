@@ -1,6 +1,6 @@
 // Script //
 node {
-  def hello = "Hello World"
+  def hello = "Mr.Ivan"
   checkout scm
   echo "Hello ${hello}"
   /* .. snip .. */
