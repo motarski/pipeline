@@ -1,6 +1,6 @@
 // Script //
 node {
-  milestone(1)
+  milestone()
   lock("Job input"){
   milestone(1)
   stage("build") {
@@ -11,7 +11,7 @@ node {
   input('Waiting for manual input before going to deploy stage')
   build job: 'runMe'
 }
-  milestone(2)
+  milestone()
   stage("Deploy") {
   echo "Deploying"
   }
