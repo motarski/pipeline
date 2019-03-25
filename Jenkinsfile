@@ -1,6 +1,8 @@
 // Script //
 node {
+  milestone(1)
   lock("Job input"){
+  milestone(1)
   stage("build") {
   def hello = "Mr.Ivan"
   checkout scm
@@ -9,6 +11,7 @@ node {
   input('Waiting for manual input before going to deploy stage')
   build job: 'runMe'
 }
+  milestone(2)
   stage("Deploy") {
   echo "Deploying"
   }
